@@ -1,0 +1,1 @@
+{"py/object": "pet.wrapper.WrapperConfig", "model_type": "korea_bert", "model_name_or_path": "klue/bert-base", "wrapper_type": "sequence_classifier", "task_name": "cssharing-sentiment", "max_seq_length": 256, "label_list": ["0", "1"], "pattern_id": 0, "verbalizer_file": null, "cache_dir": ""}
