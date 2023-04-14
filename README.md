@@ -18,7 +18,13 @@ jsonlines
 sentencepiece
 ```
 
-## 2. Unlabeled dataset Annotation
+## 2. 데이터 준비
+train.jsonl,  unlabeled.jsonl, val.jsonl
+
+## 3. PVP 정의
+custom PVP 클래스, DataProcessor 클래스
+
+## 4. Unlabeled dataset Annotation
 ```
-python cli.py --method ipet --pattern_ids 0 1 --data_dir cssharing_new --model_type korea_bert --model_name_or_path klue/bert-base --task_name cssharing-sentiment --output_dir CSsharing_Output_new --do_train --wrapper_type mlm --pet_repetitions 2 --ipet_generations 2
+python cli.py --method ipet --pattern_ids 0 1 --data_dir DATASET_FOLDER --model_type korea_bert --model_name_or_path klue/bert-base --task_name CUSTOM_TASK --output_dir output --do_train --wrapper_type mlm --pet_repetitions 2 --ipet_generations 2
 ```
